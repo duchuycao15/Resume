@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Duc Huy Cao Resume</title>
+  <style>
+    /* Page layout */
+    body {
+      margin: 0;
+      background: #f3f3f3;
+      color: #111;
+      font-family: "Times New Roman", Times, serif;
+      line-height: 1.45;
+    }
+
+    .resume-page {
+      max-width: 960px;
+      min-height: 100vh;
+      margin: 30px auto;
+      padding: 48px 60px;
+      background: #fff;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.12);
+    }
+
+    /* Header section */
+    .header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 34px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .contact-line {
+      margin-top: 4px;
+      font-size: 18px;
+    }
+
+    .contact-line a {
+      color: #0000ee;
+      text-decoration: underline;
+    }
+
+    /* Section titles and divider lines */
+    .section {
+      margin-top: 28px;
+    }
+
+    .section-title {
+      font-size: 22px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    .section-line {
+      border: none;
+      border-top: 1px solid #333;
+      margin: 0 0 16px;
+    }
+
+    /* Education rows */
+    .row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 24px;
+      font-size: 22px;
+    }
+
+    .row strong {
+      font-weight: 700;
+    }
+
+    .right-text {
+      white-space: nowrap;
+      text-align: right;
+    }
+
+    /* Skills section */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      row-gap: 4px;
+      column-gap: 20px;
+      font-size: 21px;
+    }
+
+    .skill-label {
+      font-weight: 700;
+    }
+
+    /* Experience section */
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 21px;
+      margin-bottom: 2px;
+    }
+
+    .job-title {
+      font-weight: 700;
+      font-size: 22px;
+    }
+
+    .company-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 21px;
+      margin-bottom: 18px;
+    }
+
+    .location {
+      font-style: italic;
+      white-space: nowrap;
+    }
+
+    ul {
+      margin-top: 0;
+      padding-left: 42px;
+      font-size: 20px;
+    }
+
+    li {
+      margin-bottom: 14px;
+      padding-left: 4px;
+    }
+
+    /* Small-screen support */
+    @media (max-width: 700px) {
+      .resume-page {
+        margin: 0;
+        padding: 32px 24px;
+        box-shadow: none;
+      }
+
+      .row,
+      .job-header,
+      .company-line {
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .right-text,
+      .location {
+        text-align: left;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="resume-page">
+    <!-- Resume header -->
+    <header class="header">
+      <h1>Duc Huy Cao</h1>
+      <div class="contact-line">
+        +1 (412) XXX-XXXX &loz; Pittsburgh, PA &loz;
+        <a href="mailto:your.email@example.com">Email</a> &loz;
+        <a href="#">LinkedIn</a> &loz;
+        <a href="#">Website</a>
+      </div>
+    </header>
+
+    <!-- Education section -->
+    <section class="section">
+      <div class="section-title">Education</div>
+      <hr class="section-line" />
+
+      <div class="row">
+        <div><strong>Bachelor of Computer Science</strong>, Southern New Hampshire University</div>
+        <div class="right-text">2025</div>
+      </div>
+
+      <div class="row">
+        <div><strong>Associate of Science Computer Information Systems</strong>, Community College of Allegheny County</div>
+        <div class="right-text">2017 - 2020</div>
+      </div>
+    </section>
+
+    <!-- Skills section -->
+    <section class="section">
+      <div class="section-title">Skills</div>
+      <hr class="section-line" />
+
+      <div class="skills-grid">
+        <div class="skill-label">Technical Skills</div>
+        <div>Java, Python, HTML, CSS, JavaScript</div>
+
+        <div class="skill-label">Soft Skills</div>
+        <div>Communication, Teamwork, Problem-Solving, Time Management</div>
+
+        <div class="skill-label">Languages</div>
+        <div>Vietnamese, English</div>
+      </div>
+    </section>
+
+    <!-- Experience section -->
+    <section class="section">
+      <div class="section-title">Experience</div>
+      <hr class="section-line" />
+
+      <div class="job-header">
+        <div class="job-title">Help Desk Technician</div>
+        <div class="right-text">Mar 2025 - Present</div>
+      </div>
+
+      <div class="company-line">
+        <div>ST Engineering, Aethon</div>
+        <div class="location">Pittsburgh, PA</div>
+      </div>
+
+      <ul>
+        <li>Achieved a 95% issue resolution rate by managing and troubleshooting robotic systems using Linux commands for 200+ corporate partners, including hospitals, schools, and enterprise clients.</li>
+        <li>Led remote diagnostics and hardware/software troubleshooting with Linux and system diagnostic tools, minimizing downtime for end users.</li>
+        <li>Developed streamlined support processes by responding to automated alerts and documenting troubleshooting steps in ticketing systems, improving overall service efficiency.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
