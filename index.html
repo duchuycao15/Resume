@@ -11,7 +11,7 @@
       background: #f3f3f3;
       color: #111;
       font-family: "Times New Roman", Times, serif;
-      line-height: 1.45;
+      line-height: 1.4;
     }
 
     .resume-page {
@@ -26,7 +26,7 @@
     /* Header section */
     .header {
       text-align: center;
-      margin-bottom: 36px;
+      margin-bottom: 28px;
     }
 
     .header h1 {
@@ -38,8 +38,8 @@
     }
 
     .contact-line {
-      margin-top: 4px;
-      font-size: 18px;
+      margin-top: 6px;
+      font-size: 17px;
     }
 
     .contact-line a {
@@ -49,20 +49,20 @@
 
     /* Section titles and divider lines */
     .section {
-      margin-top: 28px;
+      margin-top: 24px;
     }
 
     .section-title {
       font-size: 22px;
       font-weight: 700;
       text-transform: uppercase;
-      margin-bottom: 22px;
+      margin-bottom: 10px;
     }
 
     .section-line {
       border: none;
       border-top: 1px solid #333;
-      margin: 0 0 16px;
+      margin: 0 0 14px;
     }
 
     /* Education rows */
@@ -70,8 +70,8 @@
       display: flex;
       justify-content: space-between;
       gap: 20px;
-      margin-bottom: 24px;
-      font-size: 22px;
+      margin-bottom: 14px;
+      font-size: 20px;
     }
 
     .row strong {
@@ -86,36 +86,42 @@
     /* Skills section */
     .skills-grid {
       display: grid;
-      grid-template-columns: 180px 1fr;
-      row-gap: 4px;
+      grid-template-columns: 170px 1fr;
+      row-gap: 6px;
       column-gap: 20px;
-      font-size: 21px;
+      font-size: 19px;
     }
 
     .skill-label {
       font-weight: 700;
     }
 
-    /* Experience section */
-    .job-header {
+    /* Experience and project sections */
+    .job {
+      margin-bottom: 22px;
+    }
+
+    .job-header,
+    .project-header {
       display: flex;
       justify-content: space-between;
       gap: 20px;
-      font-size: 21px;
+      font-size: 20px;
       margin-bottom: 2px;
     }
 
-    .job-title {
+    .job-title,
+    .project-title {
       font-weight: 700;
-      font-size: 22px;
+      font-size: 21px;
     }
 
     .company-line {
       display: flex;
       justify-content: space-between;
       gap: 20px;
-      font-size: 21px;
-      margin-bottom: 18px;
+      font-size: 19px;
+      margin-bottom: 10px;
     }
 
     .location {
@@ -125,12 +131,12 @@
 
     ul {
       margin-top: 0;
-      padding-left: 42px;
-      font-size: 20px;
+      padding-left: 38px;
+      font-size: 18px;
     }
 
     li {
-      margin-bottom: 14px;
+      margin-bottom: 9px;
       padding-left: 4px;
     }
 
@@ -144,6 +150,7 @@
 
       .row,
       .job-header,
+      .project-header,
       .company-line {
         flex-direction: column;
         gap: 2px;
@@ -166,10 +173,10 @@
     <header class="header">
       <h1>Duc Huy Cao</h1>
       <div class="contact-line">
-        +1 (412) XXX-XXXX &loz; Pittsburgh, PA &loz;
-        <a href="mailto:your.email@example.com">Email</a> &loz;
-        <a href="#">LinkedIn</a> &loz;
-        <a href="#">Website</a>
+        Pittsburgh, PA |
+        <a href="mailto:huydccao@gmail.com">huydccao@gmail.com</a> |
+        <a href="https://www.linkedin.com/in/duchuycao1">linkedin.com/in/duchuycao1</a> |
+        <a href="https://duchuycao.github.io/profile">duchuycao.github.io/profile</a>
       </div>
     </header>
 
@@ -179,13 +186,13 @@
       <hr class="section-line" />
 
       <div class="row">
-        <div><strong>Bachelor of Computer Science</strong>, Southern New Hampshire University</div>
+        <div><strong>Southern New Hampshire University</strong>, Bachelor of Computer Science</div>
         <div class="right-text">2025</div>
       </div>
 
       <div class="row">
-        <div><strong>Associate of Science Computer Information Systems</strong>, Community College of Allegheny County</div>
-        <div class="right-text">2017 - 2020</div>
+        <div><strong>Community College of Allegheny County</strong>, Associate of Science in Computer Information Systems</div>
+        <div class="right-text">2017 &ndash; 2020</div>
       </div>
     </section>
 
@@ -195,13 +202,13 @@
       <hr class="section-line" />
 
       <div class="skills-grid">
-        <div class="skill-label">Technical Skills</div>
-        <div>Java, Python, HTML, CSS, JavaScript</div>
+        <div class="skill-label">Technical Skills:</div>
+        <div>Java, Python, HTML, CSS, C#, Unity, Linux, NumPy, Pandas, Matplotlib</div>
 
-        <div class="skill-label">Soft Skills</div>
-        <div>Communication, Teamwork, Problem-Solving, Time Management</div>
+        <div class="skill-label">Soft Skills:</div>
+        <div>Communication, Teamwork, Problem-Solving, Time Management, Continuous Learning</div>
 
-        <div class="skill-label">Languages</div>
+        <div class="skill-label">Languages:</div>
         <div>Vietnamese, English</div>
       </div>
     </section>
@@ -211,20 +218,75 @@
       <div class="section-title">Experience</div>
       <hr class="section-line" />
 
-      <div class="job-header">
-        <div class="job-title">Help Desk Technician</div>
-        <div class="right-text">Mar 2025 - Present</div>
+      <div class="job">
+        <div class="job-header">
+          <div class="job-title">Help Desk Technician</div>
+          <div class="right-text">Mar 2025 &ndash; Present</div>
+        </div>
+
+        <div class="company-line">
+          <div>ST Engineering, Aethon</div>
+          <div class="location">Pittsburgh, PA</div>
+        </div>
+
+        <ul>
+          <li>Over 1 year plus + Customer Services and assistance over the phone and working with ticket system.</li>
+          <li>Managed and troubleshot robotic systems using Linux commands, resolving issues for over 200 corporate partners, including hospitals and enterprise clients. Diagnosed and resolved hardware and software problems remotely using Linux commands and system diagnostic tools, optimizing robot operations with Ubuntu commands.</li>
+          <li>Assisted customers via phone, email, and chat by responding to alerts and resolving issues. Documented all troubleshooting steps in ticketing systems to improve service efficiency and ensuring minimal downtime.</li>
+        </ul>
       </div>
 
-      <div class="company-line">
-        <div>ST Engineering, Aethon</div>
-        <div class="location">Pittsburgh, PA</div>
+      <div class="job">
+        <div class="job-header">
+          <div class="job-title">Computer Science Tutor / IT Support</div>
+          <div class="right-text">Sep 2023 &ndash; Present</div>
+        </div>
+
+        <div class="company-line">
+          <div>Community College of Allegheny County</div>
+          <div class="location">Pittsburgh, PA</div>
+        </div>
+
+        <ul>
+          <li>Developing illustrative multiple Java and Python programs, resulting in a deeper understanding of programming concepts for the student learning process. Demonstrated outcomes include increased student proficiency and confidence in applying Java programming skills to real-application scenarios.</li>
+          <li>Effectively guiding and instructing students in theoretical programming concepts and practical programming for new students. The outcome of this role is evident in the enhanced understanding and proficiency demonstrated for students, empowering them to confidently apply programming principles and skills.</li>
+          <li>Instructed students on using computers for educational and academic applications, resulting in college students gaining proficiency in utilizing computers for both school and work-related tasks, contributing to a more streamlined learning experience.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div class="job-title">Game Developer Intern</div>
+          <div class="right-text">Dec 2019 &ndash; Jan 2020</div>
+        </div>
+
+        <div class="company-line">
+          <div>Space Dwarves Entertainment</div>
+          <div class="location">Greenville, NC</div>
+        </div>
+
+        <ul>
+          <li>Achieved greater gameplay depth by designing and implementing quest mechanics and systems for the protagonist in a 2D dungeon indie game using Unity and C#.</li>
+          <li>Led cross-functional collaboration with a remote team, ensuring smooth integration of features and efficient task management.</li>
+          <li>Developed and balanced 5+ side quests, refining feature scoping and complexity management in line with industry practices for indie games.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="section">
+      <div class="section-title">Projects</div>
+      <hr class="section-line" />
+
+      <div class="project-header">
+        <div class="project-title">The Best Neighborhood of Pittsburgh</div>
+        <div class="right-text">Project Link</div>
       </div>
 
       <ul>
-        <li>Achieved a 95% issue resolution rate by managing and troubleshooting robotic systems using Linux commands for 200+ corporate partners, including hospitals, schools, and enterprise clients.</li>
-        <li>Led remote diagnostics and hardware/software troubleshooting with Linux and system diagnostic tools, minimizing downtime for end users.</li>
-        <li>Developed streamlined support processes by responding to automated alerts and documenting troubleshooting steps in ticketing systems, improving overall service efficiency.</li>
+        <li>Collaborated with a teammate to analyze and integrate three datasets using Python, NumPy, and Pandas to determine the best neighborhood in Pittsburgh based on quality-of-living metrics.</li>
+        <li>Designed submetrics around entertainment, chores, and travel; cleaned, processed, and visualized data using Matplotlib.</li>
+        <li>Created a data-driven presentation highlighting neighborhoods with optimal scores, demonstrating skills in data analysis, visualization, and collaborative software development.</li>
       </ul>
     </section>
   </main>
