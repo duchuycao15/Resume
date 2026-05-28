@@ -1,9 +1,8 @@
-Adding more infomration for the resume 
-Add a links from the profolio to the resume 
-Keep the resume in the same format 
+This website is my resume, the version I wrote on my computer and hosted here, and that’s why I built the application:
 
-I made this resume so that everyone can view and see what i am doing?
+Update: 
+ 1. Adjust the resume also linked
+ 2. Adding more infomration for the resume
+ 3. Add a links from the profolio to the resume
+ 4. Keep the resume in the same format 
 
-add more infromation for it.
-
-Adjust the resume also linked 
