@@ -23,4 +23,5 @@ I’m constantly adding fresh content: new certifications, project updates, and 
 🎤 A short video introduction.
 💬 A contact form so visitors can get in touch directly.
 📚 A downloadable version of my résumé in multiple languages.
+
 Thank you for stopping by! Feel free to explore, download, or reach out—your feedback helps me grow both as a professional and as a content creator. 🌟
